@@ -1,5 +1,9 @@
 ## E2E-testing project for SalesChamp
 
+## Tests are here
+salesChamp-QA-test/cypress/integration/SalesChamp/Check/pageCheck.spec.ts /
+salesChamp-QA-test/cypress/integration/SalesChamp/Create/createLead.spec.ts /
+
 ## 1 Why Cypress
 - I have search what is the ideal automation testing tool, I tryed cypress, selenium and codeception.
 - From my point of view the Cypress is now one of the best tools to use for these reasons.
@@ -34,4 +38,4 @@
 
 ## Guide how to check this tests without installing full dependencies
 https://docs.cypress.io/guides/getting-started/installing-cypress#Direct-download 
-# saleschamp_assignment
+
