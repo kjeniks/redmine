@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"outDir": "./dist/",
+		"baseUrl": "./",
+		"paths": {
+			"@constants/*": ["./cypress/constants/*"],
+			"@pages/*": ["./cypress/Pages/*"],
+			"@helpers/*": ["./cypress/helpers/*"]
+		},
+		"module": "es6",
+		"target": "es6",
+		"allowJs": true,
+		"types": ["cypress-commands", "cypress"],
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"esModuleInterop": true
+	},
+	"include": ["**/*.ts"]
+}
