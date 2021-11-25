@@ -21,7 +21,8 @@ const person = {
     surname: 'Applicant',
     phone: '+420222980481',
     language: 'English',
-    mail: (faker.random.word()+'@'+faker.random.word()+'.cz').toLowerCase( ),
+    mail: 'qa-applicant@easy.cz',
+    //mail: (faker.random.word()+'@'+faker.random.word()+'.cz').toLowerCase( ),
     password: 'qa-test',
     role: role[faker.random.number(5)]
 }
@@ -29,13 +30,15 @@ const person = {
 describe('Start a trieal', () => {
 
     it('Start trial as a QA Applicant', () => { 
+        cy.intercept('GET','assets/first_login_form*').as('firstLoginForm')
         cy.visit('/')
         //basic control of elements on page
         trial.basicCheckElementsTrial()
+        cy.wait(2500)
         trial.submitByMail(person.mail)
+        
         //cy.contains('Your trial will be ready soon and you will be redirected into it.',{timeout:60000}).should('be.visible')
-        cy.intercept('GET','assets/first_login_form*').as('firstLoginForm')
-        cy.wait('@firstLoginForm',{timeout:120000})
+        
         trial.fillFirstLoginForm(person)
         trial.editUserProfile(person)
         trial.loginwithNewPassword(person)

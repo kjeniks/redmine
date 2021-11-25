@@ -49,7 +49,7 @@ export default class Trial {
                 cy.get('input#mauticform_input_trialrequest_email').should('be.visible')
                         .clear().type(mail)
                 cy.get('button#mauticform_input_trialrequest_submit').click()
-                cy.wait(10000)
+                cy.wait('@firstLoginForm',{timeout:180000})
         }
 
         fillFirstLoginForm(person){
