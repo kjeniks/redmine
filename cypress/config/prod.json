@@ -1,5 +1,5 @@
 {
-	"baseUrl": "https://www.saleschamp.nl/",
+	"baseUrl": "https://easyredmine.com/",
 	"viewportHeight": 1080,
 	"viewportWidth": 1920,
 	"retries": { "runMode": 2, "openMode": 2 },
