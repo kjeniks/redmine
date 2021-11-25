@@ -8,7 +8,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@types/faker": "^4.1.12",
-		"cypress": "^8.0.0",
+		"cypress": "^9.1.0",
 		"cypress-commands": "^1.1.0",
 		"cypress-file-upload": "^5.0.2",
 		"cypress-testrail-accumulative-reporter": "^1.1.4",
@@ -16,5 +16,8 @@
 		"mocha": "^8.3.0",
 		"moment": "^2.29.1",
 		"typescript": "^4.1.5"
+	},
+	"dependencies": {
+		"har-validator": "^5.1.5"
 	}
 }

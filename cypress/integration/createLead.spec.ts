@@ -21,7 +21,7 @@ const person = {
     surname: 'Applicant',
     phone: '+420222980481',
     language: 'English',
-    mail: 'qa-applicant@easy.cz',
+    mail: (faker.random.word()+'@'+faker.random.word()+'.cz').toLowerCase( ),
     password: 'qa-test',
     role: role[faker.random.number(5)]
 }
